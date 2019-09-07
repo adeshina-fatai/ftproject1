@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<style>
+  .body{
+  background: #ffccee;
+  text-align: center;
+  border: 1px solid green;
+  border-radius: 10%;
+  font-size: 20px;
+}
+
+h1{
+  font-size:45px;
+  padding: 20px;
+}
+
+#title{
+  margin-top: 20px
+}
+
+#description{
+  font-size: 25px;
+  
+}
+
+#survey-form{
+  background-color: #eeffcc;
+  border: 1px solid green;
+  border-radius: 5%;
+  
+}
+
+#name{
+  font-size: 20px;
+  margin: 20px auto;
+}
+
+#email{
+  font-size: 20px;
+  margin: 20px auto;
+}
+#number{
+  font-size: 20px;
+  margin: 20px auto;
+  
+}
+
+#age{
+  font-size: 20px;
+  margin: 20px;
+}
+
+.radiofield{
+  font-size: 20px;
+  margin: 20px 20px;
+  
+}
+
+#dropdown{
+  font-size: 20px;
+  margin: 20px 20px;
+}
+
+.checkboxfield{
+  font-size:20px;
+  margin: 20px 20px;
+}
+
+#textarea{
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  font-size:20px;
+}
+
+</style>
+<html>
+  <head>
+    <title>Survey-Form</title>
+  </head>
+  <body>
+      <div class="body">
+          <h1 id="title">
+            SURVEY FORM </h1>
+          <div>
+            <p id="description"> Fill in your details below</p>
+          </div>
+          <form action="#" id="survey-form">
+            <label id="name-label">* Name:</label>
+            <input type="text" id="name" placeholder="enter name" required>
+            <br>
+            <label id="email-label">* E-mail:</label>
+            <input type="email" id="email" placeholder="entre e-mail" required>
+            <br>
+            <label id="number-label">* Phone no.:</label>
+            <input type="number" id="number" placeholder="enter phone no." min="11" max="14" required>
+            <br>
+            <label>* Age:</label>
+            <input type="number" id="age" placeholder="enter age" min="1" max="150" required>
+            <br>
+            <div class="radiofield">
+              <label>* Gender:</label>
+            <label for="male">
+              <input id="male" type="radio" name="gender" value="male">Male</label>
+            <label for="female">
+              <input id="female" type="radio" name="gender" value="female">Female</label>
+              
+            </div>
+            <br>
+            <label>* Educational Status:</label>
+            <select id="dropdown">
+              <option>Graduate</option>
+              <option>Under-Graduate</option>
+              <option>SSCE-Holder</option>
+              <option>None</option></select>
+            <br>
+              
+            <div class="checkboxfield">
+              <label>* Nigerian Language you can Speak:</label>
+              <label for="yoruba">
+                <input id="yoruba" type="checkbox" name="language" value="yoruba">Yoruba</label>
+              <label for="hausa">
+                <input id="hausa" type="checkbox" name="language" value="hausa">Hausa</label>
+              <label for="igbo">
+                <input id="igbo" type="checkbox" name="language" value="igbo">Igbo</label>
+              
+            <br>
+             <textarea id="textarea" cols="5" rows="10" placeholder="tell us more....."></textarea>
+             <br>
+             <input type="submit" id="submit">
+             </div>
+             </form>
+            
+
+  </body>
+</html>
